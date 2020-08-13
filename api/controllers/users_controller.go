@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/ahmadsopyan29/fullstack/api/auth"
+	"github.com/ahmadsopyan29/fullstack/api/models"
+	"github.com/ahmadsopyan29/fullstack/api/responses"
+	"github.com/ahmadsopyan29/fullstack/api/utils/formaterror"
 	"github.com/gorilla/mux"
-	"github.com/victorsteven/fullstack/api/auth"
-	"github.com/victorsteven/fullstack/api/models"
-	"github.com/victorsteven/fullstack/api/responses"
-	"github.com/victorsteven/fullstack/api/utils/formaterror"
 )
 
 func (server *Server) CreateUser(w http.ResponseWriter, r *http.Request) {
